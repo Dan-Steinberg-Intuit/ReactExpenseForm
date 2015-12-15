@@ -24,9 +24,32 @@ module.exports = function(grunt) {
            			{expand: true, flatten: true, src: ["dev/img/**"], dest: "dist/img", filter: "isFile"},
 				] 
 			}
-		}
+		},
+
+	    express: {
+	      all: {
+	        options: {
+	          port:9000,
+	          hostname: 'localhost',
+	          bases: ['./dist'],
+	          livereload: true
+	        }
+	      }
+	    },
+
+	    watch: {      
+	      files: ['dev/**'],
+	      tasks: ["clean",  "browserify", "copy"],
+	      options: {
+	        livereload: true,
+	      },
+	    }
 	});
 
 	grunt.loadNpmTasks("grunt-contrib-copy");
 	grunt.registerTask("default", ["clean", "browserify", "copy"]);
+  	grunt.loadNpmTasks('grunt-contrib-watch');
+  	grunt.loadNpmTasks('grunt-express');
+
+  	grunt.registerTask('server', ['express', 'watch']);
 };

@@ -1,0 +1,178 @@
+body {
+	background-color: #143656;
+}
+
+.expense-form {
+	width: 750px;
+	margin: 0 auto;
+	font-family: Arial, Helvetica;
+}
+
+.profile-page {
+	border: 1px solid white;	
+}
+
+.profile-page-top {
+}
+
+.profile-page-top-left {
+	float: left;
+}
+
+.profile {
+	font-size: 11px;
+}
+
+.profile-page-top-left {
+	width: 248px;
+	height: 300px;
+    overflow: hidden;
+}
+
+.profile-background {
+	width: 268px;
+	height: 320px;
+	margin: -10px;
+	background-size: cover;
+    -webkit-filter: blur(10px);
+    -moz-filter: blur(10px);
+    -o-filter: blur(10px);
+    -ms-filter: blur(10px);
+    filter: blur(10px);
+}
+
+.profile-text-box {
+	position: relative;
+	top: -300px;
+	color: white;
+	text-align: center;
+}
+
+.profile-text {
+	line-height: 12px;
+}
+
+.profile-image {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	margin-top: 25px;
+	margin-bottom: 25px
+}
+
+.profile-name {
+	font-size: 200%;
+	margin-bottom: 15px;
+}
+
+.profile-stats {
+	margin-top: 10px;
+}
+
+
+.profile-followers,
+.profile-views {
+	font-weight: bold;
+	font-size: 110%;
+}
+
+.profile-page-top-right {
+	float: right;
+}
+
+.profile-page-image {
+	width: 500px;
+	height: 300px;
+}
+
+.profile-page-bottom {
+}
+
+.main-menu {
+	margin: 0 auto;
+	text-align: center;
+	clear: left;
+	height: 28px;
+	background-color: white;
+}
+
+.main-menu a {
+	font-size: 11px;
+	margin: 0px 10px;
+	padding: 5px 0px;
+}
+
+.main-menu-item:link, 
+.main-menu-item:visited,
+.main-menu-item:active {
+    color: gray;
+    text-decoration: none;
+}
+
+.main-menu-selected:link, 
+.main-menu-selected:visited,
+.main-menu-selected:active {
+	color: black;
+	font-weight: bold;
+    text-decoration: none;
+    border-bottom: 2px solid #2D5BDF;
+}
+
+.main-menu-item:hover {
+	color: blue;
+}
+
+
+
+.expense-table {
+	margin-top: 30px;
+	border-collapse: collapse;
+	font-size: 12px;
+	line-height: 34px;
+	text-align: center;
+}
+
+.expense-table thead tr,
+.expense-table thead th {
+	text-transform: uppercase;
+	background-color: black;
+}
+
+.expense-table tbody tr,
+.expense-table tbody td {
+	background-color: #0D1E2D;
+}
+
+.expense-table thead th,
+.expense-table tbody td {
+	width: 246px;
+	border: 3px solid #1DAFCB;
+	color: #B7CDE2;
+}
+
+
+
+.expense-summary {
+	margin-top: 30px;
+	margin-bottom: 25px;
+	padding: 22px 40px;
+	border: 2px solid #535353;
+	background-color: #C1C1C1;
+	font-size: 16px;
+	font-style: italic;
+	line-height: 21px;
+}
+
+.expense-summary-headers {
+	font-weight: bold;
+	text-transform: uppercase;
+	font-style: normal;
+}
+
+.expense-summary-break {
+	margin-top: 30px;
+}
+
+.break {
+	clear: both;
+}
